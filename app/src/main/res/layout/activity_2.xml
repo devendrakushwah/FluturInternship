@@ -1,0 +1,102 @@
+<RelativeLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rLayout"
+        android:background="@drawable/bg">
+
+    <View
+        android:id="@+id/spacer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/right_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/spacer"
+        android:layout_alignLeft="@id/spacer"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cap"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/spacer"
+        android:layout_alignRight="@id/spacer"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/spider"/>
+
+    <ImageView
+        android:id="@+id/right_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/spacer"
+        android:layout_below="@id/spacer"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ironman"/>
+
+    <ImageView
+        android:id="@+id/left_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@id/spacer"
+        android:layout_below="@id/spacer"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thanos"/>
+
+    <ImageView
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        android:text="Hello World"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:textSize="66sp"
+        android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLUR"
+            android:id="@+id/btn1"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNBLUR"
+            android:id="@+id/btn2"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/btn1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select an activity"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="#222222"
+                android:textStyle="bold"/>
+            <Button
+                android:layout_marginTop="120dp"
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACTIVITY 1"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_marginTop="18dp"
+                android:id="@+id/b2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACTIVITY 2"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
